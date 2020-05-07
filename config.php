@@ -7,5 +7,5 @@ define("DB_NAME", "smallblog");
 
 //Define URL
 
-define("ROOT_PATH", "/");
-define("ROOT_URL", "http://localhost/www/PHP/smallBlog-OOP-PHP");
+define("ROOT_PATH", "/www/PHP/smallBlog-OOP-PHP/");
+define("ROOT_URL", "http://localhost/www/PHP/smallBlog-OOP-PHP/");
