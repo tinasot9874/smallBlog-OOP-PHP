@@ -1,6 +1,8 @@
 <?php
+// start session
+session_start();
 require_once ("config.php");
-
+require_once ("classes/Messages.php");
 require_once ("classes/bootstrap.php");
 require_once ("classes/Controller.php");
 require_once ("classes/Model.php");

@@ -1,4 +1,5 @@
-<div class="row">
+
+<div class="row mt-3">
     <div class="col-md-12">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
@@ -11,36 +12,26 @@
 <div class="row">
 
     <div class="col-md-12">
-    <form>
+        <div class="container">
+    <form action="<?php $_SERVER['PHP_SELF']; ?>" method="post">
         <div class="form-group">
-            <label for="exampleFormControlInput1">Email address</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            <label for="exampleFormControlInput1">Share title</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" name="title" required>
         </div>
         <div class="form-group">
-            <label for="exampleFormControlSelect1">Example select</label>
-            <select class="form-control" id="exampleFormControlSelect1">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-            </select>
+            <label for="exampleFormControlTextarea1">Content</label>
+            <textarea class="form-control" name="body" id="exampleFormControlTextarea1" required rows="3"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Link Website</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" name="link" required>
         </div>
         <div class="form-group">
-            <label for="exampleFormControlSelect2">Example multiple select</label>
-            <select multiple class="form-control" id="exampleFormControlSelect2">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="exampleFormControlTextarea1">Example textarea</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <button class="btn btn-primary float-right" name="submit" type="submit">Submit</button>
         </div>
     </form>
+        </div>
     </div>
 
 </div>
